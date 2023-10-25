@@ -1,0 +1,227 @@
+<div class="content">
+  <span>{{ title }} app is running!</span>
+</div>
+<div class="container">
+  <div class="container-left">
+    <div class="container-left-top">
+      <p>SLACA 2019</p>
+    </div>
+    <div class="container-left-bottom">
+      <img src="../assets/slaca.png" alt="Slaca logo">
+      <div class="container-left-bottom-list">
+        <li *ngFor="let item of listItems" [ngClass]="item === 'Trabalhos' ? 'selectedItem' : 'none'">
+          {{item}}
+        </li>
+      </div>
+    </div>
+  </div> 
+  <div class="container-right">
+    <div class="container-right-top">
+      <div class="container-right-top-left">
+        <h6>Anais do Simpósio Latino Americano de Ciências de Alimentos</h6>
+        <h3>Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</h3>
+        <p>ISSN: 1234-5678</p>
+      </div>
+      <div class="container-right-top-right">
+        <div class="container-right-top-right-btn">
+          <img src="../assets/icon-planet.png" width="16px" alt="icon-idiomas">
+          <select>
+            <option value="PT">PT, BR</option>
+          </select>
+          <img src="../assets/icon-down.png" width="8px" alt="icon-down">
+        </div>
+        <div class="container-right-top-right-right">
+          <div class="container-right-top-right-right-left">
+            <p>Bem vindo!</p>
+            <small>alguem12@galoascience.com</small>
+          </div>
+          <div class="container-right-top-right-right-right">
+            <small>2</small>
+            <img src="../assets/perfil.jpeg" alt="foto do usuário">
+          </div>
+        </div>       
+      </div>
+    </div>
+    <div class="container-right-bottom">
+      <div class="container-right-bottom-1">
+        <div class="container-right-bottom-1-1">
+          <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
+          <img src="../assets/exemplo-video.jpeg" alt="exemplo para vídeo">
+        </div>
+        <div class="container-right-bottom-1-2">
+          <div class="container-right-bottom-1-2-top">
+            <div class="container-right-bottom-1-2-btn">
+              <button class="download-btn"><img src="../assets/downloadImage.png" alt=""> Download</button>
+              <button class="star-btn"><img src="../assets/starImage.png" alt="icon-star"></button>
+              <button class="doi-btn"><small><img src="../assets/doiImage.png" alt=""></small></button>
+            </div>
+            <p>COMO CITAR ESSE TRABALHO?</p>
+          </div>
+          <div class="container-right-bottom-detalhes">
+            <h3>Detalhes</h3>
+            <div class="container-right-bottom-detalhes-content">
+              <p>Tipo de apresentação: <b>Pôster</b></p>
+              <p>Eixo temático: <b>Alimentação e saúde (AS)</b></p>
+              <p>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
+
+              <div class="container-right-bottom-detalhes-content-autores">
+                <h4><b>Autores:</b></h4>
+                <p>Galileo Galilei<small>1</small></p>
+                <p>Berta Langes de Marretes<small>2</small></p>
+                <p>Isaac Newton<small>3</small></p>
+                <p>Cesar Lattes<small>1</small></p>
+                <p>Stephen Hawking<small>4</small></p>
+              </div>
+  
+              <div class="container-right-bottom-detalhes-content-universidades">
+                <p><small>1</small>Universidade Estadual de Campinas</p>
+                <p><small>2</small>Universidade de São Paulo</p>
+                <p><small>3</small>Instituto Nacional de Pesquisas Espaciais</p>
+                <p><small>4</small>Universidade Federal do Rio de Janeiro</p>
+              </div>
+
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sapiente velit inventore repellendus saepe. Numquam, porro? Vero voluptate veritatis adipisci rerum provident, optio, doloremque sapiente sint esse corporis, ratione ex! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda quod libero reprehenderit fugit quis iusto placeat perferendis obcaecati ipsum. Quo, aspernatur eligendi possimus dolores voluptate recusandae deleniti illo accusantium.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div (click)="toggleShowText()" class="container-right-bottom-2">
+         <h3>Resumo</h3>
+         <div *ngIf="showText" class="container-right-bottom-1-text">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, sit! Commodi ipsam odit laboriosam unde vero maxime atque modi dolorum iste aspernatur inventore ex reiciendis, ipsa tempore? Cum deleniti reprehenderit corrupti, ipsum, nam voluptates excepturi voluptatibus nemo quidem ab adipisci ut odio consequuntur soluta saepe tenetur. Iure quod eveniet molestiae nesciunt sunt magnam doloremque maxime quos sint, enim nisi, obcaecati sequi labore? Repellendus, facilis nam accusantium dolorum dolorem deserunt corrupti accusamus pariatur saepe cumque animi, dignissimos voluptas necessitatibus ipsa nihil, architecto voluptates nemo! Laboriosam rem in mollitia, voluptate quas explicabo quam distinctio reiciendis, corporis ipsum facere modi quibusdam adipisci? Recusandae?</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, hic, vero atque dolorem iure voluptatem reprehenderit amet porro voluptatum maiores veniam, minima quod. Cupiditate velit, ratione culpa aperiam obcaecati qui id nihil, et, animi praesentium corporis! Odit ipsum facilis impedit eius consequatur possimus odio reprehenderit, provident laudantium eligendi quod assumenda rerum iure, porro sequi repudiandae fuga. Consequatur pariatur enim fugit repellat autem laudantium ipsum! Magnam harum autem itaque cumque veniam quam suscipit dignissimos nam repudiandae. Necessitatibus laborum ducimus nam quo voluptatum qui unde architecto quia fugiat iste iusto tempora et hic consequatur, quisquam inventore corporis? Fugit expedita incidunt pariatur dolorum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vero accusamus magnam ex soluta sint dolor esse, rerum enim non pariatur nesciunt maiores facere quibusdam, aut ratione perferendis recusandae vel voluptates animi numquam placeat! Odit, ratione illo eligendi ea in, velit ut aperiam harum architecto quasi voluptas, libero sunt labore. Autem ipsam commodi nihil accusamus doloribus? Odit necessitatibus quod sint officia, ullam voluptates aspernatur a. Quisquam cumque atque, porro voluptates incidunt, ipsa dolorem aliquid pariatur ab molestias sint nisi? Officiis consectetur optio facere distinctio repellat, praesentium nam eligendi voluptates temporibus maiores ipsum corrupti sunt quis nostrum similique impedit tenetur? Blanditiis!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, numquam possimus? Odio vel quidem animi ut distinctio aliquid minima quasi nisi non eveniet eaque harum praesentium, officiis deleniti laboriosam voluptates, fugit esse perspiciatis tempora alias beatae autem incidunt. Aliquam ipsa cum, sequi delectus amet beatae quas eius consequuntur porro non harum id optio exercitationem, accusamus recusandae voluptatum nihil. Et, quo eius temporibus consequatur nostrum, quae magnam eum laborum dolore non harum vitae. Excepturi ad iure sequi harum officiis doloremque iusto blanditiis perferendis. Nulla quaerat facilis harum minima itaque illo molestias architecto dolorum quam, officia fugiat. Obcaecati pariatur ipsa et excepturi.</p>
+         </div>
+         <div *ngIf="showText === false" class="text-active">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, sit! Commodi ipsam odit laboriosam unde vero maxime atque modi dolorum iste aspernatur inventore ex reiciendis, ipsa tempore? Cum deleniti reprehenderit corrupti, ipsum, nam voluptates excepturi voluptatibus nemo quidem ab adipisci ut odio consequuntur soluta saepe tenetur. Iure quod eveniet molestiae nesciunt sunt magnam doloremque maxime quos sint, enim nisi, obcaecati sequi labore? Repellendus, facilis nam accusantium dolorum dolorem deserunt corrupti accusamus pariatur saepe cumque animi, dignissimos voluptas necessitatibus ipsa nihil, architecto voluptates nemo! Laboriosam? architecto voluptates Laboriosam... <span class="btn-show-more">ver mais</span></p>
+            
+         </div>
+      </div>
+      <div class="container-right-bottom-3">
+        <h3>Discussões</h3>
+        <div *ngIf="newTopic === false && sendTopic === false" class="container-right-bottom-3-1">
+          <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
+          <div class="container-right-bottom-3-1-images">
+            <img src="../assets/discussao1.jpeg" alt="mão segurando flor">
+            <img src="../assets/discussao2.jpeg" alt="">
+            <img src="../assets/discussao3.jpeg" alt="mão segurando flor">
+          </div>
+          <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curuisidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+        </div>
+        <button *ngIf="newTopic === false && sendTopic === false" (click)="handleNewTopic()" class="btn-create-topic container-right-bottom-3-btn"><small>+</small>criar tópico</button>
+
+        <div *ngIf="newTopic && sendTopic === false" class="container-right-bottom-3-1-1">
+          <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+  
+          <h5>Assunto</h5>
+          <div class="input1">
+            <form name="topicForm">
+              <input class="subject" type="text" placeholder="Defina um tópico sucinto para notificar os autores..."/>
+            </form>
+          </div>
+  
+          <h5>Conteúdo</h5>
+          <div class="input2">
+            <form name="contentForm">
+              <input type="text"/>
+            </form>
+            <div class="input2-btn">
+              <button class="btn-create-topic" (click)="handleSendTopic()">Enviar</button>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="sendTopic" class="container-right-bottom-3-1-2">
+          <h4>Seu tópico foi enviado com sucesso! :D</h4>
+          <p>Agradecemos por sua contribuição, uma notificação será eviada ao seu email assim que seu tópico for respondido!</p>
+          <a href="#">Descubra outros trabalhos!</a>
+          <button (click)="handleNewTopic()" class="container-right-bottom-3-btn">criar novo tópico</button>
+        </div>
+
+        <div *ngIf="sendTopic" class="container-right-bottom-3-2-hover">
+          <div class="container-right-bottom-3-2">
+            <h4>Assunto da pergunta aparece aqui</h4>
+            <small>Carlos Henrique Santos</small>
+            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            <div class="container-right-bottom-3-2-options">
+              <img class="dots" src="../assets/dots.png" alt="opções">
+              <div class="heart">
+                <img src="../assets/heart.png" alt="icon de coração">
+              </div>
+              <p>1 like</p>
+              <p>1 resposta</p>
+            </div>
+          </div>
+          <div class="container-right-bottom-3-2-sob">
+            <img class="imgSmall" src="../assets/confirm.png" alt="confirmação">
+            <img src="../assets/confirm.png" alt="confirmação">
+            <p>Aguardando feedback dos autores</p>
+            <a href="">Editar tópico</a>
+          </div>
+        </div>
+
+        <div class="container-right-bottom-3-2">
+          <div class="container-right-bottom-3-2-1">
+            <h4>Assunto da pergunta aparece aqui</h4>
+            <small>Carlos Henrique Santos</small>
+            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            <div class="container-right-bottom-3-2-options">
+              <img class="dots" src="../assets/dots.png" alt="opções">
+              <div class="heart">
+                <img src="../assets/heart.png" alt="icon de coração">
+              </div>
+              <p>1 like</p>
+              <p>1 resposta</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container-right-bottom-3-2 answered-topic ops-topic-subject" (click)="handleSeeResponse()">
+          <div class="container-right-bottom-3-2-1">
+            <h4>Assunto da pergunta aparece aqui</h4>
+            <small>Carlos Henrique Santos</small>
+            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            <div class="container-right-bottom-3-2-options">
+              <img class="dots" src="../assets/dots.png" alt="opções">
+              <div class="heart">
+                <img src="../assets/heart.png" alt="icon de coração">
+              </div>
+              <p>{{topico.length}} like</p>
+              <p>{{topico.length}} resposta</p>
+            </div>
+          </div>
+
+          <div *ngIf="seeResponse">
+            <div class="container-right-bottom-3-2-1 comments-container" *ngFor="let item of topico" [style.backgroundColor]="item.background">
+              <div class="container-right-bottom-3-2-1-top">
+                <small>{{item.name}}</small>
+                <div class="right" *ngIf="item.type !== 'leitor'">
+                  <p>{{item.type}}</p>
+                  <div class="images">
+                    <img class="imgSmall" src="../assets/confirm-orange.png" alt="imagem confirmação">
+                    <img src="../assets/confirm-orange.png" alt="imagem confirmação">
+                  </div>
+                </div>
+              </div>
+              <p>{{item.text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-right-bottom-footer">
+        <div class="container-right-bottom-footer-left">
+          <img src="../assets/galoa-logo.png" alt="logo-galoá">
+          <button>Saiba mais</button>
+        </div>
+        <div class="container-right-bottom-footer-right">
+          <p><b>Preservar a memória do vento e ampliar o acesso ao conhecimento científico</b> gerado em eventos é a razão de ser da plataforma Galoá Preceedings.</p>
+          <p>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
